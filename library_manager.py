@@ -122,7 +122,7 @@ def search_book():
         print("\n📚 Matching Books:")
         for idx, book in enumerate(matches, 1):
             read_status = "Read" if book["read"] else "Unread"
-            print(f"{idx}. {book['title']} by {book['author']} ({book['year']}) - {book['genre']} - {read_status}")
+            print(f"{idx}. {book['title']} by {book['author']} ({book['year']}) | Genre: {book['genre']} | Status: {read_status}")
     else:
         print("⚠️ No matching books found.")
 
